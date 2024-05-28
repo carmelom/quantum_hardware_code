@@ -1238,6 +1238,43 @@ files = [
 cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
+name = "qutip"
+version = "5.0.2"
+description = "QuTiP: The Quantum Toolbox in Python"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "qutip-5.0.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:2e31c629d2f45ed60cf2510b64f867632a2148dac34b1d3e047c27e8c9e35713"},
+    {file = "qutip-5.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ebf1bf3d5a3e8337121549d4dab62a28b268d417f1614598bd9422f5b2669fd9"},
+    {file = "qutip-5.0.2-cp310-cp310-win_amd64.whl", hash = "sha256:08c7b7a42796b160b3d58eb0873797ad15748c5842076f259ecfed2e9645f5a9"},
+    {file = "qutip-5.0.2-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:fb1fd548a1db7217530569773a8fa617ee1cf1ff9776efc84684f1f40089b8bf"},
+    {file = "qutip-5.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f298929be214bb057cddb5434711b8471779259115329ed7edea501b489d3b79"},
+    {file = "qutip-5.0.2-cp311-cp311-win_amd64.whl", hash = "sha256:2f385d6b540def78aabc87c5aaf230bd83b58db7a6383b11651354a30f3c2bf8"},
+    {file = "qutip-5.0.2-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:52eabd9e1bfa608b0af13d07bda8f43b97f2d9d3cb1ea493d35a851bc2cbf006"},
+    {file = "qutip-5.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:97fc764e302da7450c63727773e21cab78b45fc66f6e904e28a786c0f87f7db3"},
+    {file = "qutip-5.0.2-cp312-cp312-win_amd64.whl", hash = "sha256:0fb98f3ff347ee75d90a7b3ae65014c62e6985abf62d28e75d26ad8fde541867"},
+    {file = "qutip-5.0.2-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:5be725b2d43cd88be6432b14d687e850c653bee24ca277423c7a737b7be389ec"},
+    {file = "qutip-5.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dd57dc5c1e654f3e8d4dcad1d3ffa3fba608b8ca9523088d5f7a19004f3b26f9"},
+    {file = "qutip-5.0.2-cp39-cp39-win_amd64.whl", hash = "sha256:493fcdf20f43b61a426b206ae7ce01265d869f8038934c097076d6611a228cb6"},
+    {file = "qutip-5.0.2.tar.gz", hash = "sha256:1c3d0fecc3e237783a9ef22cec2c54f49f0da4c17b9ee036848bdd9009f4baf5"},
+]
+
+[package.dependencies]
+numpy = ">=1.22,<2.0.0"
+packaging = "*"
+scipy = ">=1.8"
+
+[package.extras]
+extras = ["loky", "tqdm"]
+full = ["cvxopt", "cvxpy (>=1.0)", "cython (>=0.29.20)", "cython (>=0.29.20,<3.0.0)", "filelock", "ipython", "loky", "matplotlib (>=1.2.1)", "pytest (>=5.2)", "pytest-rerunfailures", "setuptools", "tqdm"]
+graphics = ["matplotlib (>=1.2.1)"]
+ipython = ["ipython"]
+mpi = ["mpi4py"]
+runtime-compilation = ["cython (>=0.29.20)", "cython (>=0.29.20,<3.0.0)", "filelock", "setuptools"]
+semidefinite = ["cvxopt", "cvxpy (>=1.0)"]
+tests = ["pytest (>=5.2)", "pytest-rerunfailures"]
+
+[[package]]
 name = "scipy"
 version = "1.13.0"
 description = "Fundamental algorithms for scientific computing in Python"
@@ -1400,4 +1437,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "0a5eab2c4c19446f1467e44194b32f3c811cf0cac2f49a3967d6222651b01ab1"
+content-hash = "10e07f96575d68653950c872f0b932d85ad71f764baa9d3228c6cd950c84bb51"
